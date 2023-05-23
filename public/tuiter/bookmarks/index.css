@@ -35,8 +35,9 @@
     color: gray;
 }
 
-.wd-info-text-black{
+.wd-info-text-black-bold{
     color: black;
+    font-weight: bold;
 }
 .wd-info-more
 {
