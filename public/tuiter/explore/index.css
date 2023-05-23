@@ -55,7 +55,7 @@ height: 20px;
 
   .wd-li-horizontal {
     display: inline-block;
-    margin-right: 160px; 
+    margin-right: 140px; 
   }
 
   .wd-ul-horizontal
@@ -72,8 +72,8 @@ height: 20px;
 
   .wd-for-you{
     padding: 13px;
-    
     border-bottom: blue solid;
+    font-weight: bold;
   }
 
   .wd-mg-space{
@@ -198,6 +198,7 @@ body {
 
 .wd-gray {
   color: rgb(110, 118, 125);
+  font-weight: bold;
 }
 
 .wd-white{
