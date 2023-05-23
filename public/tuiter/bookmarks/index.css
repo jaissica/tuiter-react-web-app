@@ -3,11 +3,8 @@
     color: black;
 }
 
-.wd-gray-13 {
-    font-size: 13px;
-    color: gray;
-}
-.wd-title-wrap {
+
+.wd-title {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -16,6 +13,7 @@
     padding-bottom: 12px;
     border-bottom: 1px solid lightgray;
 }
+
 .wd-title-main{
     font-size: 20px;
     font-weight: bold;
@@ -29,22 +27,26 @@
     width: 5%;
     margin-bottom: 8px;
 }
-.wd-title-more {
-    font-size: 20px;
-    font-weight: bold;
-    color: gray;
-}
+
+
 
 .wd-info-text-black-bold{
     color: black;
     font-weight: bold;
 }
-.wd-info-more
-{
-    font-size: 20px;
-    font-weight: bold;
-    color: gray; 
+
+.wd-dots {
+  font-size: 20px;
+  font-weight: bold;
+  color: gray;
 }
+
+.wd-dots-heading {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
 .wd-info-wrap{
     display: flex;
     flex-direction: row;
@@ -53,7 +55,8 @@
     padding-bottom: 12px;
     border-bottom: 1px solid lightgray;
 }
-.wd-avatar{
+
+.wd-side-icon{
     width: 48px;
     height: 48px;
     border-radius: 50%;
@@ -97,6 +100,7 @@
     padding: 12px;
     max-width: 480px;
 }
+
 .wd-info-gray {
     margin-top: 5px;
     color: gray;
@@ -110,10 +114,10 @@
     justify-content: space-between;
     align-items: center;
 }
+
 .wd-info-icon {
     display: flex;
 }
-
 
 .wd-pink-13{
     color: palevioletred;
@@ -137,13 +141,14 @@
   }
   
   .wd-gray {
-    color: rgb(110, 118, 125);
+    color: gray;
   }
   
+
   .wd-gray-13 {
     font-size: 13px;
-    color:rgb(110, 118, 125);
-  }
+    color: gray;
+}
   
   .wd-list {
     list-style: none;
