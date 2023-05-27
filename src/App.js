@@ -1,8 +1,9 @@
 import Labs from "./labs";
+import HelloWorld from "./labs/a3/hello-world";
 function App() {
    return (
       <div className="container">
-         <h1>Hello World!</h1>
+         <HelloWorld/>
          <Labs/>
       </div>
    );
