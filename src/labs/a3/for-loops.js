@@ -11,7 +11,7 @@ function ForLoops()
     }  
     return(
         <>
-        <h2>Looping through arrays</h2>
+        <h3>Looping through arrays</h3>
         stringArray2 = {stringArray2} <br/>
         </>
     )

@@ -8,7 +8,6 @@ function WorkingWithFunctions()
     console.log('Working Functions');
     return(
        <div>
-          <h1>Working Functions</h1>
           <ES5Functions/>
           <ArrowFunctions/>
           <ImpliedReturn/>
