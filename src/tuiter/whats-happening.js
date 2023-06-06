@@ -41,10 +41,10 @@ const WhatsHappening = () => {
            <HiOutlineGif className="me-3"></HiOutlineGif>
            <MdFormatListBulleted className="me-3"></MdFormatListBulleted>
            <BsEmojiSmile className="me-3"></BsEmojiSmile>
-           <TbCalendarStats className="me-3"></TbCalendarStats>
+            {/* <TbCalendarStats className="me-3"></TbCalendarStats> */}
            <HiOutlineLocationMarker className="me-3"></HiOutlineLocationMarker>
-           <BiBold className="me-3"></BiBold>
-           <BiItalic className="me-3"></BiItalic>
+           {/* <BiBold className="me-3"></BiBold> */}
+           {/* <BiItalic className="me-3"></BiItalic> */}
          </div>
        </div>
      </div>
