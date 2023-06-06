@@ -15,12 +15,12 @@ import { configureStore } from '@reduxjs/toolkit';
 import {Provider} from "react-redux";
 const store = configureStore(
   {reducer: {who: whoReducer, tuits: tuitsReducer}});
-  
 
 
 
 function Tuiter() {
  return (
+
   <Provider store={store}>
    <div>
      <Nav />
@@ -39,15 +39,7 @@ function Tuiter() {
        </div>
      
        <div className="col-3">
-      {/* <WhoToFollowListItem />
-<WhoToFollowListItem who={{
-  userName: "Tesla",
-  handle: "tesla",
-  avatarIcon: "https://upload.wikimedia.org/wikipedia/commons/e/e8/Tesla_logo.png"}} />
-<WhoToFollowListItem who={{
-  userName: "SpaceX",
-  handle: "spacex",
-  avatarIcon: "https://i.pinimg.com/originals/b6/12/2e/b6122e067cad4cde07468d6627544989.png"}} /> */}
+      {}
   <WhoToFollowList/>
   
        </div>
