@@ -1,4 +1,4 @@
-[{ "_id": 123, "userName": "SpaceX",
+[{ "_id": 123, "userName": "SpaceX", "topic": "Space", 
    "title": "Tesla CyberTruck lands on Mars and picks up the Curiosity rover on its 6' bed",
    "time": "2h",   "image": "https://i.pinimg.com/736x/b6/12/2e/b6122e067cad4cde07468d6627544989.jpg",
    "liked": true,
@@ -9,7 +9,7 @@
    "tuit": "This morning at 12:34 EST Earth time. a convoy of Tesla CvberTrucks drove across the Martian lanscabe aneroickine do the corositv. soourner. solr anc cerserance on their 6 beds"
   },
 
-  { "_id": 345,  "userName": "Tesla",
+  { "_id": 345,  "userName": "Tesla", "topic": "Energy", 
    "title": "Tesla FSD finally makes driving obsolete. After years of delay, Tesla Full Self Driving can drive you to work while you work, play, or sleep",
    "time": "4d",   "image": "https://th.bing.com/th/id/R.e488777d759169c74b74aa95f07adbed?rik=VWCMNP%2fO1MdzWQ&riu=http%3a%2f%2fwww.carlogos.org%2flogo%2fTesla-logo-2003-2500x2500.png&ehk=JNBLiptu%2fRFyW%2fKfTZ0WnRm0dTAAOD2QoMqcnnk71e0%3d&risl=&pid=ImgRaw&r=0",
    "liked": true,
@@ -20,7 +20,7 @@
    "tuit": "Tesla FSD finally makes driving obsolete. After years of delay, Tesla Full Self Driving can drive you to work while you work, play, or sleep"
   }, 
   
- { "_id": 234,   "userName": "SpaceX",
+ { "_id": 234,   "userName": "SpaceX", "topic": "Space",
    "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
    "time": "2h",   "image": "https://logodix.com/logo/355.jpg", 
    "liked": true,
