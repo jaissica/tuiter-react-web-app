@@ -4,7 +4,7 @@ import NavigationSidebar from "./navigation-sidebar";
 import HomeScreen from "./home-screen"
 import ExploreScreen from "./explore-screen"
 import BookmarksScreen from "./bookmarks-screen"
-import ProfileScreen from "./profile-screen"
+// import ProfileScreen from "./profile-screen"
 import WhoToFollowListItem from "./who-to-follow-list/who-to-follow-list-item";
 import WhoToFollowList from "./who-to-follow-list";
 import TuitSummaryItem from "./tuit-summary-list/tuit-summary-item"
@@ -13,9 +13,14 @@ import whoReducer from "./reducers/who-reducer";
 import tuitsReducer from "./reducers/tuits-reducer";
 import { configureStore } from '@reduxjs/toolkit';
 import {Provider} from "react-redux";
+import ProfileScreen from "./user/profile-screen";
+import LoginScreen from "./user/login-screen";
+import RegisterScreen from "./user/register-screen";
+import authReducer from "./reducers/auth-reducer";
 const store = configureStore(
   {reducer: {who: whoReducer, 
-    tuits: tuitsReducer}});
+    tuits: tuitsReducer,
+    user:  authReducer}});
 
 function Tuiter() {
   return (
@@ -28,6 +33,9 @@ function Tuiter() {
         </div>
         <div className="text-lg-start col-10 col-lg-7 col-xl-6 col-xxl-6">
           <Routes>
+             <Route path="/login"    element={<LoginScreen    />} />
+             <Route path="/register" element={<RegisterScreen />} />
+             <Route path="/profile"  element={<ProfileScreen  />} />
              <Route path="/home" element={<HomeScreen />} />
              <Route path="/explore" element={<ExploreScreen />} />
              <Route path="/bookmarks" element={<BookmarksScreen />} />
