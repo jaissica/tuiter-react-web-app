@@ -6,8 +6,8 @@ const WhoToFollowList = () => {
   const whoArray = useSelector((state) => state.who);
  return(
   
-   <ul className="list-group" style={{width: 250}}>
-     <li className="list-group-item">
+   <ul className="list-group" style={{width: 235}}>
+     <li className="list-group-item" style={"col-12"} >
        <h3>Who to follow</h3>
      </li>
      {
