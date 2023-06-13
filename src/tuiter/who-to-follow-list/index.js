@@ -7,7 +7,7 @@ const WhoToFollowList = () => {
  return(
   
    <ul className="list-group" style={{width: 235}}>
-     <li className="list-group-item" >
+     <li className="list-group-item" style={"col-12"} >
        <h3>Who to follow</h3>
      </li>
      {
