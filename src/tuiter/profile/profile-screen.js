@@ -11,6 +11,13 @@ function ProfileScreen() {
  const save = async () => { 
     await dispatch(updateUserThunk(profile)); 
 };
+//  useEffect(() => {
+//      async function fetchData() {
+//      const {payload} = await dispatch(profileThunk());
+//      setProfile(payload);
+//      }
+//      fetchData();
+//       },[]);
 
 useEffect(  () => {
     dispatch(profileThunk())
@@ -40,8 +47,7 @@ console.log("profile" , profile)
           };
           setProfile(newProfile);
          }}/>
-       </div>
-       </div>
+       </div></div>
      )}
      <button
       onClick={() => {
