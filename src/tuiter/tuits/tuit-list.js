@@ -1,8 +1,7 @@
 import React, {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {findTuitsThunk} from "../services/tuits-thunks";
-import TuitItem
-  from "./tuit-item";
+import TuitItem from "./tuit-item";
 
 const TuitList = () => {
   const {tuits, loading} = useSelector(state => state.tuits)
@@ -12,8 +11,6 @@ const TuitList = () => {
     dispatch(findTuitsThunk())
   }, [])
  
- 
-
  return(
    <ul className="list-group">
     { loading &&
@@ -23,8 +20,7 @@ const TuitList = () => {
      }
 
      {
-      
-       tuits.map(tuit =>
+      tuits.map(tuit =>
          <TuitItem
            key={tuit._id} tuit={tuit}/> )
      }

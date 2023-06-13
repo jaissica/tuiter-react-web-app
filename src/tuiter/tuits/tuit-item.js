@@ -2,7 +2,7 @@ import React from "react";
 import '../../vendors/bootstrap-icons/font/bootstrap-icons.min.css';
 import {useDispatch} from "react-redux";
 import './tuit.css';
-import TuitStates from "./tuit-states";
+import TuitStats from "./tuit-stats";
 import {deleteTuitThunk} from "../services/tuits-thunks";
 
 
@@ -39,7 +39,7 @@ const deleteTuitHandler = (id) => {
         </div>
        <div>{tuit.tuit}</div>
        <br/>
-       <div><TuitStates tuit={tuit} key={tuit._id} /></div>
+       <div><TuitStats tuit={tuit} key={tuit._id} /></div>
         
      </div>
      
