@@ -6,13 +6,14 @@ import '../../vendors/bootstrap/all.min.css';
 
 
 const NavigationSidebar = () => {
+  const { currentUser } = useSelector((state) => state.user);
  const { pathname } = useLocation();
  const [ignore, tuiter, active] = pathname.split("/");
  const links = [{name : "home", image : "fa-home"},    {name : "explore", image : "fa-hashtag"},  
                 {name : "notifications", image : "fa-bell"}, {name : "messages", image: "fa-envelope"}, 
                 {name : "bookmarks", image : "fa-bookmark"}, {name : "lists", image : "fa-list"}, 
                 {name : "profile", image : "fa-user"}, {name : "more", image : "fa-ellipsis"}];
-const { currentUser } = useSelector((state) => state.user);              
+  console.log("user : ", currentUser)
  return (
    <div className="list-group">
     {!currentUser && <Link className="list-group" to="/tuiter/login">   Login   </Link>}
@@ -26,6 +27,7 @@ const { currentUser } = useSelector((state) => state.user);
          </Link>
          
      )}
+     
    </div>
  );
 };

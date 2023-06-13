@@ -1,7 +1,7 @@
 import React from "react";
 const WhoToFollowListItem = (
  {
-   who = { userName: 'NASA', handle: 'NASA', avatarIcon: "https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg" }
+   who = { userName: 'NASA', handle: 'NASA', avatarIcon: 'https://th.bing.com/th/id/OIP.7HdKdZHNfDgz7832n2aLZAHaHg?pid=ImgDet&rs=1' }
  }
 ) => {
  return(

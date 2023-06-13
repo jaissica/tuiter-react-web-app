@@ -2,9 +2,9 @@ import React from "react";
 import '../../vendors/bootstrap-icons/font/bootstrap-icons.min.css';
 import {useDispatch} from "react-redux";
 import './tuit.css';
-import TuitStats from "./tuit-stats";
-// import {deleteTuit} from "../reducers/tuits-reducer";
+import TuitStates from "./tuit-states";
 import {deleteTuitThunk} from "../services/tuits-thunks";
+
 
 
 const TuitItem = (
@@ -24,7 +24,6 @@ const TuitItem = (
 
   const dispatch = useDispatch();
 const deleteTuitHandler = (id) => {
-  // dispatch(deleteTuit(id));
   dispatch(deleteTuitThunk(id));
 }
  return(
@@ -40,10 +39,7 @@ const deleteTuitHandler = (id) => {
         </div>
        <div>{tuit.tuit}</div>
        <br/>
-       <div><TuitStats tuit_states={{"liked": tuit.liked,
-        "replies": tuit.replies,
-        "retuits": tuit.retuits,
-        "likes": tuit.likes }} /></div>
+       <div><TuitStates tuit={tuit} key={tuit._id} /></div>
         
      </div>
      
