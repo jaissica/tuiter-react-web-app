@@ -1,12 +1,12 @@
 import React, {useState} from "react";
-import { AiOutlinePicture} from 'react-icons/ai';
-import { MdFormatListBulleted} from 'react-icons/md';
-import { HiOutlineLocationMarker} from 'react-icons/hi';
-import { BiBold} from 'react-icons/bi';
-import { BiItalic} from 'react-icons/bi';
-import { HiOutlineGif } from 'react-icons/hi2';
-import { BsEmojiSmile } from 'react-icons/bs';
-import { TbCalendarStats } from 'react-icons/tb'
+import { AiOutlinePicture } from "react-icons/ai";
+import { HiOutlineGif } from "react-icons/hi2";
+import { MdFormatListBulleted } from "react-icons/md";
+import { BsEmojiSmile } from "react-icons/bs";
+import { TbCalendarStats } from "react-icons/tb";
+import { HiOutlineLocationMarker } from "react-icons/hi";
+import { BiBold } from "react-icons/bi";
+import { BiItalic } from "react-icons/bi";
 import {createTuitThunk} from "./services/tuits-thunks";
 import {useDispatch} from "react-redux";
 
