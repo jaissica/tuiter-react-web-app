@@ -3,6 +3,8 @@ import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router";
 import { profileThunk, logoutThunk, updateUserThunk }
   from "../services/auth-thunks";
+import "./index.css";
+
 function ProfileScreen() {
  const { currentUser } = useSelector((state) => state.user);
  var [ profile, setProfile ] = useState(currentUser);
@@ -29,7 +31,7 @@ console.log("profile" , profile)
      <h1>Profile Screen</h1>
      {profile && (<div>
        <div>
-        <label>First Name</label>
+        <label class = "f-Name">First Name</label>
         <input type="text" value={profile.firstName}
          onChange={(event) => {
           const newProfile = {
@@ -39,7 +41,7 @@ console.log("profile" , profile)
          }}/>
        </div>
        <div>
-        <label>Last Name</label>
+        <label class = "f-Name">Last Name</label>
         <input type="text" value={profile.lastName}
          onChange={(event) => {
           const newProfile = {
@@ -49,12 +51,12 @@ console.log("profile" , profile)
          }}/>
        </div></div>
      )}
-     <button
+     <button class = "l-button"
       onClick={() => {
         dispatch(logoutThunk());
         navigate("/tuiter/login");
       }}>                   Logout</button>
-     <button onClick={save}>Save  </button>
+     <button class = "r-button" onClick={save}>Save  </button>
     </div> );
 }
 export default ProfileScreen;
